@@ -1,0 +1,21 @@
+{
+  "name": "mrmayhem",
+  "description": "Multiplayer game",
+  "main": "server.js",
+  "authors": [
+    "Magnus Persson"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "phaser": "^2.6.2"
+  }
+}
