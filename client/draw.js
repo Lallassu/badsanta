@@ -389,6 +389,7 @@ function DrawPlayer(game, player) {
         this.sprite.scale.x = 1;
         var style = { font: "8px Arial", fill: "#ff0000" };  
         if(local) {
+            this.game.game.camera.follow(this.sprite, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
             style = { font: "8px Arial", fill: "#00ff00" };  
         }
         this.nameTag = this.game.game.add.text(0, 0, name, style);
@@ -397,9 +398,6 @@ function DrawPlayer(game, player) {
 
         this.sprite.animations.add('walk', [0, 1, 2], 10, true);
         this.sprite.anchor.setTo(0.5,0.5);
-        if(local) {
-            this.game.game.camera.follow(this.sprite);
-        }
     };
 }
 
